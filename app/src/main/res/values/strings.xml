@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="service_name">MediaPlaybackService</string>
+    <string name="loop_button_text">Loop</string>
+    <string name="folder_button_text">Folder</string>
+    <string name="file_button_text">File</string>
+    <string name="start_button_text">Start</string>
+    <string name="text_view_default">DEFAULT</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="chooser_title">File Explorer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

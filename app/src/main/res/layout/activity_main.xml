@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.bcit.comp3717.lab05.a00957091.MainActivity">
+
+    <Button
+        android:text="@string/file_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fileButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="@string/folder_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/folderButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ToggleButton
+        android:text="@string/loop_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonLoop"
+        android:onClick="onClickToggleLoop"
+        android:layout_alignBaseline="@+id/toggleButtonPlay"
+        android:layout_alignBottom="@+id/toggleButtonPlay"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <ToggleButton
+        android:text="@string/start_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:id="@+id/toggleButtonPlay"
+        android:onClick="onClickToggleStartStop"/>
+
+    <TextView
+        android:text="@string/text_view_default"
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:layout_above="@+id/toggleButtonPlay"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/text_view_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/durationTotal"
+        android:layout_alignBaseline="@+id/durationCurrent"
+        android:layout_alignBottom="@+id/durationCurrent"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="@string/text_view_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:id="@+id/durationCurrent"
+        android:layout_above="@+id/toggleButtonPlay"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/durationTotal"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+
+</RelativeLayout>
